@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Buku Tamu</title>
+</head>
+<body>
+    <h1>Form Buku Tamu</h1>
+    <form action="/submit_form" method="post">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama_lengkap"><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="alamat">Alamat Tinggal:</label><br>
+        <input type="text" id="alamat" name="alamat_tinggal"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Aktif Pada Sosial Media:</label><br>
+        <input type="checkbox" id="facebook" name="sosial_media" value="Facebook">
+        <label for="facebook">Facebook</label>
+        <input type="checkbox" id="twitter" name="sosial_media" value="Twitter">
+        <label for="twitter">Twitter</label>
+        <input type="checkbox" id="instagram" name="sosial_media" value="Instagram">
+        <label for="instagram">Instagram</label>
+        <input type="checkbox" id="path" name="sosial_media" value="Path">
+        <label for="path">Path</label><br><br>
+
+        <label for="sumber">Mengetahui Web Ini dari:</label><br>
+        <select id="sumber" name="sumber">
+            <option value="">-- Pilih --</option>
+            <option value="Google">Google</option>
+            <option value="Teman">Teman</option>
+            <option value="Iklan">Iklan</option>
+        </select><br><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Batal">
+    </form>
+
+    <p><a href="about.html">Ke Laman About</a></p>
+</body>
+</html>
